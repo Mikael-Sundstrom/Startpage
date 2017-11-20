@@ -1,0 +1,37 @@
+.gold{background: rgba(255,169,13, 1)}
+.gold-text{color: #ffa90d}
+.blue{background: rgba(38,57,151, 1)}
+.blue-text{color: rgba(38,57,151, 1)}
+.white{background: rgba(255,255,255, 1)}
+.white-text{color: rgba(255,255,255, 1)}
+.silver{background: rgba(240,240,240, 1)}
+.silver-text{color: rgba(240,240,240, 1)}
+.gray{background: rgba(186,186,186, 1)}
+.gray-text{color: rgba(186,186,186, 1)}
+.black{background:#404040}
+.black-text{color:#404040}
+.green{background:#00b80f}
+.green-text{color:#00b80f}
+.yellow{background:#ffa90d}
+.yellow-text{color:#ffa90d}
+.red{background:#d30000}
+.red-text{color:#d30000}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(240,240,240, 1);
+    color:#404040;
+}
+h2 {
+    margin: 0;
+    padding: 8px 0 12px 0;
+}
+.content {
+    position: relative;
+    padding: 8px;
+    background: #fff;
+    box-shadow:0px 2px 2px silver;
+}
+.shadow {
+    padding-left: 26px;
+    box-shadow: 0px 2px 2px silver, inset 8px 0 0 rgba(255,169,13, 1),inset 14px 0 0 #404040;
+}
