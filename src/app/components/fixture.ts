@@ -12,32 +12,34 @@ interface MatchFixtures {
 @Component({
     selector: 'app-fixture',
     template: `
-    <div class="content" style="max-height:240px;overflow:auto;">
-      <table width="100%">
-        <caption style="font-size:22px;">
-          Spelschema
-        </caption>
-        <tbody *ngFor="let match of data?.fixtures">
-          <tr>
-            <td style="padding-top:8px;font-size:16px;text-align:center;" colspan="3">Omgång {{match['matchday']}}</td>
-          </tr>
-          <tr>
-            <td style="text-align:right;width:45%;">{{match['homeTeamName']}}</td>
-            <td style="text-align:center;width:32px;font-size:16px;" [ngClass]="{'green-text':match['result']['goalsHomeTeam']>match['result']['goalsAwayTeam'],'red-text':match['result']['goalsHomeTeam']<match['result']['goalsAwayTeam'],'yellow-text':match['result']['goalsHomeTeam']==match['result']['goalsAwayTeam']}">{{match['result']['goalsHomeTeam']}}</td>
-            <td>{{match['date']|date:'dd MMMM'}}</td>
-          </tr>
-          <tr>
-            <td style="text-align:right;width:45%;">{{match['awayTeamName']}}</td>
-            <td style="text-align:center;width:32px;font-size:16px;" [ngClass]="{'red-text':match['result']['goalsHomeTeam']>match['result']['goalsAwayTeam'],'green-text':match['result']['goalsHomeTeam']<match['result']['goalsAwayTeam'],'yellow-text':match['result']['goalsHomeTeam']==match['result']['goalsAwayTeam']}">{{match['result']['goalsAwayTeam']}}</td>
-            <td>{{match['date']|date:'HH.mm'}}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="content">
+        <table>
+            <caption>
+                Spelschema
+            </caption>
+            <tbody *ngFor="let match of data?.fixtures">
+                <tr>
+                    <td style="padding-top:8px;font-size:18px;text-align:center;" colspan="3">Omgång {{match['matchday']}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;width:45%;">{{match['homeTeamName']}}</td>
+                    <td style="text-align:center;width:32px;font-size:16px;" [ngClass]="{'green-text':match['result']['goalsHomeTeam']>match['result']['goalsAwayTeam'],'red-text':match['result']['goalsHomeTeam']<match['result']['goalsAwayTeam'],'yellow-text':match['result']['goalsHomeTeam']==match['result']['goalsAwayTeam']}">{{match['result']['goalsHomeTeam']}}</td>
+                    <td>{{match['date']|date:'dd MMMM'}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;width:45%;">{{match['awayTeamName']}}</td>
+                    <td style="text-align:center;width:32px;font-size:16px;" [ngClass]="{'red-text':match['result']['goalsHomeTeam']>match['result']['goalsAwayTeam'],'green-text':match['result']['goalsHomeTeam']<match['result']['goalsAwayTeam'],'yellow-text':match['result']['goalsHomeTeam']==match['result']['goalsAwayTeam']}">{{match['result']['goalsAwayTeam']}}</td>
+                    <td>{{match['date']|date:'HH.mm'}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  `,
+    `,
     styles: [`
-    table{width:100%;}
-    tbody tr td{font-size:10px}
+    .content{max-height:288px;overflow:auto;}
+    table{width:100%;margin-bottom:16px;}
+    caption{font-size:23px;}
+    tbody tr td{font-size:13px}
   `]
 })
 

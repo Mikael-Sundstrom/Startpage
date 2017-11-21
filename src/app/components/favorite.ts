@@ -23,7 +23,12 @@ import { Component, OnInit } from '@angular/core';
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    a {
         border-bottom: 1px solid #efefef;
+    }
+    a:last-child {
+        border-bottom: none;
     }
     li:hover {
         background-color: #f8f8f8;

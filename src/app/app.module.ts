@@ -30,8 +30,8 @@ import { SoccerAuthInterceptor } from './global/soccer.interceptor';
         FlexLayoutModule
     ],
     providers: [
-        { provide: LOCALE_ID, useValue: 'sv-SV' }/* ,
-        { provide: HTTP_INTERCEPTORS, useClass: SoccerAuthInterceptor, multi: true } */
+        /* { provide: LOCALE_ID, useValue: 'sv-SV' }, */
+        { provide: HTTP_INTERCEPTORS, useClass: SoccerAuthInterceptor, multi: true }
     ],
     bootstrap: [AppComponent]
 })
