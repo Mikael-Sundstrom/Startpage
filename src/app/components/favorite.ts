@@ -74,6 +74,10 @@ export class FavoriteComponent implements OnInit {
         {
             name: 'Google translate',
             url: 'https://translate.google.com/'
+        },
+        {
+            name: 'Password generator',
+            url: 'https://stackblitz.com/edit/angular-password-generator?file=app%2Fpassword.component.ts'
         }
     ];
     constructor() { }
