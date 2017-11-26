@@ -36,7 +36,7 @@ interface MatchFixtures {
     </div>
     `,
     styles: [`
-    .content{max-height:288px;overflow:auto;}
+    .content{max-height:300px;overflow:auto;}
     table{width:100%;margin-bottom:16px;}
     caption{font-size:23px;}
     tbody tr td{font-size:13px}
@@ -95,22 +95,22 @@ export class FixtureComponent implements OnInit {
           ) */
     }
 }
-/* 
-Hi Mikael Sundström, 
-thanks for registering for an API authentication token. 
-Please modify your client to use a HTTP header named "X-Auth-Token" 
-with the underneath personal token as value. 
+/*
+Hi Mikael Sundström,
+thanks for registering for an API authentication token.
+Please modify your client to use a HTTP header named "X-Auth-Token"
+with the underneath personal token as value.
 
-Your API token: 21703283a7884751ab3600e48307da78 
+Your API token: 21703283a7884751ab3600e48307da78
 
-Please verify your mail address by clicking here and tell me if you 
+Please verify your mail address by clicking here and tell me if you
 want me to keep you posted about updates and/or changes to the API.
 
-Check the code samples, have a look at the third party libraries to 
+Check the code samples, have a look at the third party libraries to
 see how to integrate the API in your project or go straight to the exhaustive documentation.
 
-If you face bugs, problems or any question concerning the API in general, feel free to ask! 
+If you face bugs, problems or any question concerning the API in general, feel free to ask!
 
 Best,
-daniel  
+daniel
 */

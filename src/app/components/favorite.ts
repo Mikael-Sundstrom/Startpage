@@ -76,8 +76,16 @@ export class FavoriteComponent implements OnInit {
             url: 'https://translate.google.com/'
         },
         {
-            name: 'Password generator',
-            url: 'https://stackblitz.com/edit/angular-password-generator?file=app%2Fpassword.component.ts'
+            name: 'Codepen',
+            url: 'https://codepen.io/dashboard/'
+        },
+        {
+            name: 'StackOverflow',
+            url: 'https://stackoverflow.com/users/6277897/m-sundstrom'
+        },
+        {
+            name: 'Stackblitz',
+            url: 'https://stackblitz.com/@Mikael-Sundstrom'
         }
     ];
     constructor() { }

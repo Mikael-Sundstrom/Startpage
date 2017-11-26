@@ -18,7 +18,7 @@ interface UserInfo {
     <div class="content shadow">
         <h2>{{data?.ip}}</h2>
         <ul>
-            <li><img src="./../../assets/{{data?.country}}.svg" height="12px" /> {{data?.country}}, {{data?.region}}</li>
+            <li><img src="./assets/{{data?.country}}.svg" height="12px" /> {{data?.country}}, {{data?.region}}</li>
             <li>{{data?.postal}}, {{data?.city}}</li>
             <li>{{data?.loc}}</li>
             <li>{{data?.org}}</li>
@@ -42,7 +42,7 @@ interface UserInfo {
 
     li:before {
         content: '';
-        width: 0; 
+        width: 0;
         height: 0;
         left: 14px;
         position: absolute;
