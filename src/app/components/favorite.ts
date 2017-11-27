@@ -76,6 +76,18 @@ export class FavoriteComponent implements OnInit {
             url: 'https://translate.google.com/'
         },
         {
+            name: 'Office online',
+            url: 'https://www.office.com/'
+        },
+        {
+            name: 'Binero',
+            url: 'https://binero.se/'
+        },
+        {
+            name: 'GitHub',
+            url: 'https://github.com/'
+        },
+        {
             name: 'Codepen',
             url: 'https://codepen.io/dashboard/'
         },
